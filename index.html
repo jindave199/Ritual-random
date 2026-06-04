@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ritual Pick</title>
+    <link rel="icon" type="image/png" href="./assets/ritual-favicon.png" />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div id="fireflyLayer" class="firefly-layer" aria-hidden="true"></div>
+    <div class="app-shell">
+      <section class="opening-stage">
+        <header class="stage-header">
+          <div>
+            <p class="eyebrow">Ritual Pick</p>
+            <h1>Ritual Pick</h1>
+          </div>
+          <div class="stats-strip">
+            <div class="stat-chip">
+              <span class="stat-label">Pool</span>
+              <strong id="totalCount">0</strong>
+            </div>
+            <div class="stat-chip">
+              <span class="stat-label">Owners</span>
+              <strong id="ownerCount">0</strong>
+            </div>
+            <div class="stat-chip">
+              <span class="stat-label">Last drop</span>
+              <strong id="lastDropLabel">Waiting</strong>
+            </div>
+          </div>
+        </header>
+
+        <div class="case-stage">
+          <div class="stage-overlay"></div>
+          <div class="case-window">
+            <div class="center-marker"></div>
+            <div id="reelTrack" class="reel-track" aria-live="polite"></div>
+          </div>
+        </div>
+
+        <div class="control-row">
+          <button id="spinButton" class="spin-button" type="button">
+            Open Ritual Case
+          </button>
+
+          <div class="spin-meta">
+            <span class="meta-label">Session</span>
+            <strong id="spinCounter">0</strong>
+          </div>
+        </div>
+
+        <section class="history-panel" aria-label="Recent drops">
+          <div class="history-header">
+            <p class="eyebrow">Recent</p>
+            <strong>Drop history</strong>
+          </div>
+          <div id="historyList" class="history-list"></div>
+        </section>
+      </section>
+
+      <aside class="detail-panel">
+        <div class="detail-header">
+          <p class="eyebrow">Selected Dapp</p>
+          <strong id="detailState">Awaiting drop</strong>
+        </div>
+
+        <article id="resultCard" class="result-card result-card-empty">
+          <div class="result-topline">
+            <span id="rarityBadge" class="rarity-badge">Unopened</span>
+            <span id="categoryBadge" class="category-badge">Pending</span>
+          </div>
+
+          <div class="result-title-row">
+            <div id="dappMonogram" class="dapp-monogram">RR</div>
+            <div>
+              <h2 id="dappTitle">Waiting for a roll</h2>
+              <p id="dappDomain" class="muted-line">No domain locked yet</p>
+            </div>
+          </div>
+
+          <dl class="detail-grid">
+            <div class="detail-row">
+              <dt>Function</dt>
+              <dd id="dappFunction">Pending</dd>
+            </div>
+            <div class="detail-row">
+              <dt>Owner</dt>
+              <dd id="dappOwner">Pending</dd>
+            </div>
+            <div class="detail-row">
+              <dt>X handle</dt>
+              <dd id="dappHandle">Pending</dd>
+            </div>
+            <div class="detail-row">
+              <dt>Access</dt>
+              <dd id="dappUrlLabel">Pending</dd>
+            </div>
+            <div class="detail-row">
+              <dt>Notes</dt>
+              <dd id="dappNotes">Placeholder owner and X data</dd>
+            </div>
+          </dl>
+
+          <div class="owner-panel">
+            <img
+              id="ownerAvatar"
+              class="owner-avatar"
+              src=""
+              alt=""
+              width="80"
+              height="80"
+            />
+            <div class="owner-meta">
+              <strong id="ownerDisplay">Pending owner</strong>
+              <span id="ownerRole" class="muted-line">Community builder</span>
+            </div>
+          </div>
+
+          <div class="action-links">
+            <a id="visitDappLink" class="action-link primary-link" href="#" target="_blank" rel="noreferrer">
+              Visit dapp
+            </a>
+            <a id="visitXLink" class="action-link" href="#" target="_blank" rel="noreferrer">
+              Open X
+            </a>
+          </div>
+        </article>
+      </aside>
+    </div>
+
+    <script src="./data/dapps.js"></script>
+    <audio id="bgAudio" preload="metadata" src="./assets/sound/Glass Sigil.mp3" loop></audio>
+    <audio id="spinAudio" preload="metadata" src="./assets/sound/sound(1).mp3"></audio>
+    <script src="./app.js"></script>
+  </body>
+</html>

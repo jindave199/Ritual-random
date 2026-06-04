@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" fill="none">
+  <rect width="1600" height="1000" fill="#03110C"/>
+  <g opacity="0.22" stroke="#6CFFD6" stroke-width="1">
+    <path d="M0 120H1600"/>
+    <path d="M0 280H1600"/>
+    <path d="M0 440H1600"/>
+    <path d="M0 600H1600"/>
+    <path d="M0 760H1600"/>
+    <path d="M0 920H1600"/>
+    <path d="M160 0V1000"/>
+    <path d="M400 0V1000"/>
+    <path d="M640 0V1000"/>
+    <path d="M880 0V1000"/>
+    <path d="M1120 0V1000"/>
+    <path d="M1360 0V1000"/>
+  </g>
+  <g opacity="0.18">
+    <path d="M800 162L1028 288V542L800 668L572 542V288L800 162Z" fill="#071A14" stroke="#2DD9A2" stroke-width="3"/>
+    <path d="M800 248L948 330V500L800 582L652 500V330L800 248Z" fill="#0A211A" stroke="#7AFFE0" stroke-width="2"/>
+    <path d="M800 318L886 366V464L800 512L714 464V366L800 318Z" fill="#0B1814" stroke="#CFFFF1" stroke-width="2"/>
+  </g>
+  <g opacity="0.12" stroke="#D9FFF2" stroke-width="1">
+    <path d="M534 714L1066 182"/>
+    <path d="M480 768L1120 128"/>
+    <path d="M598 768L1238 128"/>
+    <path d="M364 714L896 182"/>
+  </g>
+</svg>
